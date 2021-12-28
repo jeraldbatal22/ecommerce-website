@@ -23,7 +23,7 @@ app.use(errorHandling);
 const PORT = 7000
 mongodb.then(() => {
   console.log('Successfully connected mongoose DB');
-  app.listen(PORT, 'localhost', () => {
+  app.listen(process.env.PORT || PORT, 'localhost', () => {
     console.log(`http://localhost:${PORT}`)
   });
 }).catch((err) => console.log(err, 'Error connect monggose DB'))
