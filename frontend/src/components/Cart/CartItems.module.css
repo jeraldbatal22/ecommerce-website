@@ -1,0 +1,136 @@
+/* Cart Start  */
+.cartList {
+  position: absolute;
+  left: 60%;
+  width: 27%;
+  top: calc(100% + 1rem);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ffff;
+  box-shadow: 1px 1px 10px 1px gray;
+  text-align: start;
+  overflow: scroll;
+  height: 65vh;
+}
+
+.cartList::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.cartList::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.cartList::-webkit-scrollbar {
+  width: 6px;
+} 
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top:20px;
+  margin-bottom:15px;
+  padding: 15px 20px;
+}
+
+.quantity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 10px;
+  background: #F3F4F6;
+  border-radius: 500px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.details {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: gray;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.total_price {
+  display: flex;
+  align-items: center;
+}
+
+
+.modalContent {
+  margin-bottom: 65px
+}
+
+.cartList h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.cartList h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.removeToCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkoutBtn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 20px;
+  justify-content: center;
+  position: fixed;
+  bottom: 23%;
+  width: 26%;
+  background-color: #ffff;
+}
+
+.checkoutBtn button {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background: #ff7d1b;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Cart end */
+
+@media(max-width: 700px) {
+
+  .image  {
+    width: 30%;
+  }
+
+  .cartList {
+    left: 0;
+    width: 100%;
+  }
+
+  .checkoutBtn {
+    width: 96%;
+    bottom: 21%;
+  }
+
+}

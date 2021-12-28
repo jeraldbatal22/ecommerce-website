@@ -1,0 +1,96 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Heebo:wght@300&family=Josefin+Sans:ital,wght@1,300&family=Kumbh+Sans:wght@800&family=Poppins:ital,wght@1,300&family=Shippori+Antique&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Heebo:wght@300&family=Josefin+Sans:ital,wght@1,300&family=Kumbh+Sans:wght@800&family=Poppins:ital,wght@0,500;1,300&family=Shippori+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Heebo:wght@300&family=Josefin+Sans:ital,wght@1,300&family=Kumbh+Sans:wght@800&family=Poppins:wght@300&family=Shippori+Antique&display=swap');
+
+.signupContainer {
+  min-height: 75vh;
+  /* background-color: #F5F5F5; */
+  /* background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('../../images/bg-intro-desktop.png');  */
+  width: 35%;
+  margin: auto;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+}
+
+.rightContent {
+  font-family: 'Poppins', sans-serif;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 0px 0px;
+}
+
+.rightContent h1 {
+  color: gray;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.formContainer {
+  width: 90%;
+  margin: 0px auto;
+  background-color: #ffff;
+  padding: 20px 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px gray;
+}
+
+.formGroup {
+  display: flex;
+  font-weight: 700;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.formGroup label {
+  margin-left: 20px;
+}
+
+.formButton button {
+  color: #ffff;
+  font-size: 18px;
+  margin: 15px 0px;
+  padding: 15px 0px;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #ff7d1b;
+}
+
+.formFooter {
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .signupContainer {
+    width: 90%;
+  }
+
+  .signupContainer {
+    flex-wrap: wrap;
+  }
+
+  .formContainer {
+    width: 100%;
+  }
+
+  .leftContent {
+    display: none;
+  }
+
+  .rightContent h1 {
+    font-size: 25px;
+  }
+  .formGroup input {
+    font-size: 13px;
+  }
+
+  .formFooter {
+    font-size: 15px;
+  }
+}

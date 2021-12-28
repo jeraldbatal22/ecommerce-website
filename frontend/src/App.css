@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Heebo:wght@300&family=Shippori+Antique&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Heebo', sans-serif;
+  background-color: #F5F5F5;
+  /* min-height: 88vh; */
+  /* background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url('./images/bg-intro-desktop.png'); */
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+/* 
+
+@media (max-width:768px) { 
+  body {
+    width: 90%;
+  }
+} */

@@ -1,0 +1,132 @@
+.orderContainer {
+  width: 75%;
+  margin: auto;
+  height: 75vh;
+  margin-top: 50px;
+}
+
+.orderContent {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orderLeft {
+  flex-grow: 1;
+}
+
+.orderLeft .shippingInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.shippingCard, .paymentCard, .orderLeft .orderInfo  {
+  border-radius: 5px;
+  width: 95%;
+  margin-bottom: 20px;
+  background-color: #ffff;
+  padding: 20px;
+}
+
+.orderInfo {
+  background-color: #ffff;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #ffff;
+  padding: 20px;
+}
+
+.orderLeft .paymentInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderLeft .scrollable {
+  overflow: scroll;
+  height: 45vh;
+}
+
+.orderLeft .scrollable::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.orderLeft .scrollable::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+.orderLeft .scrollable::-webkit-scrollbar {
+  width: 6px;
+} 
+
+
+.orderLeft .orderInfo ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.orderLeft .orderInfo ul li {
+  width: 200px;
+}
+
+.orderRight {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.orderRight .orderInfo .orderInfoChild {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* display: flex; */
+}
+
+.orderRight .orderInfo button {
+  color: #ffff;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 40px;
+  width: 100%;
+  padding: 15px 0px;
+  cursor: pointer;
+  border: none;
+  /* border: 1px solid gray; */
+  background-color: #ff7d1b;
+}
+
+@media (max-width: 800px) {
+  .orderContainer {
+    width: 90%;
+  }
+  
+  .orderLeft {
+    width: 100%;
+  }
+  
+  .shippingCard, .paymentCard, .orderLeft .orderInfo  {
+    width: 100%;
+  }
+
+  .orderLeft .orderInfo ul li {
+    text-align: center;
+    font-size: 10px;
+  }
+  .orderLeft .orderInfo ul img {
+    width: 100%;
+  }
+
+  .orderLeft .scrollable::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+  }
+  
+  .orderLeft .scrollable::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+  
+  .orderLeft .scrollable::-webkit-scrollbar {
+    width: 3px;
+  } 
+}
